@@ -1,0 +1,52 @@
+
+
+#titulo {
+    color: tomato;
+}
+
+.texto {
+    color: slateblue;
+}
+p.canela {
+
+    color: mediumaquamarine;
+
+
+}
+div p {
+    color: aquamarine;
+}
+
+div h2, h3 {
+    color: brown;
+
+}
+/* Esta opcion sirve para modificar todo el documento pero
+solo servira para modificar atributos que antes no se hayan realizado */
+*{
+    font-size: 24px;
+    color: black;    
+}
+.color{
+    color: rgb(207, 20, 182);
+}
+.color {
+    /* border: 5px red outset; */
+    /*
+    dotted
+    dashed
+    solid
+    double
+    groove
+    ridge
+    inset
+    outsed
+    none
+    hidden    
+    */
+border-style: solid;
+border-color: blue;
+border-radius: 5px;
+border-width: 1cm;
+}
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- Signo de esclamacion y tecla TAB-->
+<html>
+<head>
+    
+    <title>Mi primera web</title>
+    <link real="stylesheet" href="style.css"> 
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- como se hacen las tablas -->
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Producto</th><th>Precio</th>
+            </tr>
+        </thead>
+       <tbody>
+        <tr>
+            <td>texto prueba</td><td>5000</td>
+        </tr>
+        <tr>
+            <td>texto prueba</td><td>4000</td>
+        </tr>
+       </tbody>
+       <tfoot>
+           <td></td>
+           <td>Total: 9000</td>
+       </tfoot>
+    </table>
+
+
+    <!-- lista no ordenada-->
+    <ul>
+        <li> Elemento 1</li>
+        <li> Elemento 2</li>
+        <li> Elemento 3</li>
+        <li> Elemento 4</li>
+
+    </ul>
+    <!-- lista ordenada-->
+    <ol>
+        <li> Elemento 1</li>
+        <li> Elemento 2</li>
+        <li> Elemento 3</li>
+        <li> Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;"> Sub Elemento 1</li>
+                <li style="list-style-type: lower-alpha;"> Sub Elemento 2</li>
+                <li style="list-style-type: lower-alpha;"> Sub Elemento 3</li>
+                <li style="list-style-type: lower-alpha;"> Sub Elemento 4</li>
+            </ol>
+        </li>
+
+    </ol>
+
+
+
+
+    <!-- Formulario -->
+    <form action="/formulario" method="POST">
+        <!-- La herramienta action sirve para guardar los valores en el formulario
+        el metodo get nos muestra los datos en la url y el metodo post nos muestra
+        los datos en inspeccionar elemento-->
+        <label for="nombre">Nombre</label>
+        <!-- la accion for y id sirven para que el usuario haga 
+        click en el area "Nombre" y le especifique el recuadro correspondiente
+        de formulario-->
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre"/>
+        <br><br>
+        <!-- la herramienta type sirve para que el boton o recuadro (input)
+        sea diferente, puede ser un formato unicamente para llenar con
+        contrasena, email, boton de sumit, casilla de verificacion, etc-->
+        
+        <!-- la opcion name sirve para que los datos que se envien 
+        al servidor sean leidos como tal, si ponemos la llave name
+        el servidor leera lo que le pongamos despues del igual (eso fue lo que entendi xd)-->
+
+        <!-- la herramienta placeholder sirve para mostrarle al usuario que 
+        esta digitando el formulario lo que debera poner (esto le aparecera
+        con una letra levemente suave superpuesta en el recuadro del formulario)-->
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido"/>
+        <br><br>
+        <label for="comentario">Comentario</label>
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario"></textarea>
+        <br>
+        <button type="button">Tipo boton</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+        <!-- botones -->
+
+
+    </form>
+
+    
+
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <!-- Encabezado y subtitulos-->
+    <p>Parrafo texto</p>
+    <!-- Parrafo -->
+    <hr>
+    <!-- separacion de parrafo con linea -->
+    <p> parrafo texto 2 </p>
+    <p>Este texto es para <span style="color: blue">referenciar</span> una frase con <br> <!-- la accion br es para hacer saltos de linea-->
+        la accion espan</p>
+    <!-- la herramienta <span></span> sirve para seleccionar texto o elementos html y hacer cualquier modificacion en ellos-->
+
+    <a href="https://www.youtube.com/watch?v=MJkdaVFHrto&ab_channel=HolaMundo">Ir a yutu</a>
+    <!-- <a href sirve para hacer un hipervinculo en la misma pagina-->
+    <hr>
+    <a target="_blank" href="https://www.youtube.com/watch?v=MJkdaVFHrto&ab_channel=HolaMundo">Ir a yutu2</a>
+    <!-- <a target="_blank" sirve para hacer un hipervinculo en otra pagina-->            
+    <hr>
+        <img src="img/Mechasybici.jpg" width="400" /> <!-- tambien se puede usar height-->
+    
+<iframe src="img/bonsai.jpg"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3VS973ZUys8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"
+</body>
+</html>
